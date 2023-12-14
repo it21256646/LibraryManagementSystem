@@ -1,0 +1,55 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:"segoe UI";
+  font-weight:400;
+  background:#fcfcfc;
+}
+footer{
+  background:#004094;
+  height:auto;
+  padding:40px 0;
+  color:#fff;
+}
+
+button{
+  padding:9px 25px;
+  background-color:rgba(0,136,169,1);
+  transition: all 0.3s ease 0s;
+  border: none;
+  border-radius: 50px ;
+  cursor: pointer;
+}
+button:hover{
+  background-color:rgba(0,136,169,0.8);
+}
+
+.social_icon{
+  list-style:none ;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:25px;
+}
+.social_icon li{
+  margin:0 10px;
+}
+.social_icon a{
+  text-decoration:none;
+  color:inherit;
+  border: 1.1px solid white;
+  padding:15px;
+  border-radius:50%;
+  width: 35px;
+}
+.social_icon a ion-icon{
+  font-size:1.1rem;
+  width:20px;
+  transition:color.4sease;
+}
+.social_icon a:hover ion-icon{
+  color:#0088a9;
+}

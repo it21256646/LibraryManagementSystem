@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Management System</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/signupStyles.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/imgSlider.css">
+        <link rel="stylesheet" href="../css/HList.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <script src="../js/myscript1.js"> </script>
+        
+
+    </head>
+    <body>
+	
+	<header>
+    <img class="logo" src="../images/LOGO.jpg" alt="LOGO" width="300" height="100"> <br> <a href="login.html"><button>LOG IN</button></a>
+  </header>
+  <!--Navigation bar stat-->
+    <nav>
+      <ul class="navLinks">
+        <li><a href="#" class="active">HOME         </a></li>
+        <li><a href="#">CONTACT US   </a></li>
+        <li><a href="#">REGISTER     </a></li>
+        <li><a href="#">BOOK GALLERY </a></li>
+      </ul>
+    </nav>
+  <!--Navigation bar End-->
+      
+        <hr style="margin-top:175px;">
+        
+        <center><h1>Sign Up</h1></center>
+
+        <br>
+		<br>
+        <div class="signupForm">
+        <form method="POST" action="submitSignUp.php" onsubmit="return checkPassword()">
+			
+			<fieldset>
+                <p>
+                    <label for="fName" >Full name:</label>
+                    <input type="text" placeholder="type here" align="left" name="fullName">
+                </p>
+                <p>
+                    <label for="fName">Username:</label>
+                    <input type="text" placeholder="type here" align="left" name="username">
+                </p>
+                <p>
+                    <label for="fName">Email:</label>
+                    <input type="email" placeholder="type here" align="left" name="emailAdd">
+                </p>
+                <p>
+                    <label for="fName" >Password: </label>
+                    <input type="password" id= "pwd" placeholder="type here" align="left" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}" required>
+                </p>
+                <p>
+                    <label for="fName">Re-enter Password:</label>
+                    <input type="password" placeholder="type here" align="left" id="rePass">
+                    
+                </p>
+                </fieldset>
+        
+            
+        <a href="google.com"> <button class="signup goog">Sign Up with Google</button> </a> <br><br>
+        <a href="google.com"> <button class="signup face">Sign Up with Facebook</button> </a> <br><br>
+        
+        
+        <input type="checkbox" id="termscheckbox" onclick = "enableButton()">Agree with terms and conditions <br><br>
+        <center><input type="submit" value="Sign Up" id="sub" disabled><br><br>
+            <a href="login.html">Already have an account?</a></center><br><br>
+        </form>
+        </div>
+        
+
+       
+        <footer>
+      <a href="#"><button>Contact US</button></a>
+      <a href="#"><button>ABOUT US</button></a>
+    <!--Icons for footer-->
+    <div  class="social_icon">
+    <ul>
+      <a href="#"> <ion-icon name="logo-facebook">  </ion-icon></a>
+      <a href="#"> <ion-icon name="logo-youtube">  </ion-icon></a>
+      <a href="#"> <ion-icon name="logo-twitter">   </ion-icon></a>
+      <a href="#"> <ion-icon name="logo-instagram"> </ion-icon></a>
+    </ul></div>
+    
+  </footer>
+        
+
+
+    </body>
+</html>
